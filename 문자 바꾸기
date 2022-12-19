@@ -1,0 +1,15 @@
+function replaceAll(str, from, to) {
+  //문자열과 두 개의 문자(from, to)를 입력받아, 문자열에 등장하는 특정 문자(from)가 다른 문자(to)로 바뀐 문자열을 리턴해야 합니다.
+  //from 문자의 인덱스 확인.
+  // 그 인덱스에 to문자 삽입.
+  let newStr = ''
+  for(let i = 0; i < str.length; i++){
+    if(from === str[i]){
+      newStr += to;
+    }
+    else{
+      newStr += str[i]
+    }
+  }
+  return newStr;
+  }
