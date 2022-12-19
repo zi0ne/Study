@@ -1,0 +1,14 @@
+let num = 0;
+if (num >= 2 && num <= 9) {
+  console.log(num * 1);
+  console.log(num * 2);
+  console.log(num * 3);
+  console.log(num * 4);
+  console.log(num * 5);
+  console.log(num * 6);
+  console.log(num * 7);
+  console.log(num * 8);
+  console.log(num * 9);
+} else {
+  console.log('2와 9사이의 수를 입력하세요.');
+}
