@@ -1,0 +1,14 @@
+function countCharacter(str, letter) {
+  count = 0 
+  if(str.length !== 0){
+    for(let i =0; i < str.length; i++){
+      if(letter == str[i]){
+        count += 1
+      }
+    }
+    return count
+  }
+  else{
+    return 0
+  }
+}
