@@ -1,0 +1,25 @@
+function letterCapitalize(str) {
+  //문자열을 입력받아 문자열을 구성하는 각 단어의 첫 글자가 대문자인 문자열을 리턴해야 합니다.
+  // 새로운 문자열 선언
+  // 문자열의 0번, 띄어쓰기 그 뒤의 문자를 대문자로 바꿔야 한다
+  // 배열안의 요소를 반복문을 통해 새로운 문자열 안으로 넣기
+  // 조건문을 통해 요소의 첫번째 인덱스 문자열인지 확인하여 대문자로 변경
+  // 단어 뒤에 공백 줄 것 첫번째 for
+  // 문자열 리턴 , 맨 뒤 공백 없애기
+  
+  let newStr = '';
+  let arr = str.split(' ');
+  for(let i = 0; i < arr.length; i ++){
+    for(let j= 0; j < arr[i].length; j++){
+      if(arr[i][j] === arr[i][0]){
+        newStr += arr[i][0].toUpperCase();
+      }
+      else{
+        newStr += arr[i][j];
+      }
+    }
+    newStr += ' ';
+  }
+  
+  return newStr.slice(0,newStr.length-1);
+}
